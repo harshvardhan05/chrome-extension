@@ -17,7 +17,15 @@ inputBtn.addEventListener("click", function(){
 function renderLeads(){
     let listItems = ""
     for(let i = 0; i < myLeads.length; i++){
-        listItems += "<li>" +  myLeads[i]  + "</li>"
+    //   listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" +  myLeads[i]  + "</a></li>"
+         listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'> 
+                    ${myLeads[i]} 
+                </a>
+            </li>
+        `
+        
        // console.log(listItems)
             //     another way of doing it is :
             //     create element
@@ -27,5 +35,5 @@ function renderLeads(){
             //    li.textContent = myLeads[i]
             //    ulEl.append(li)
     }
-    ulEl.innerHTML = listItems
-}
+    ulEl.innerHTML =  listItems 
+} 
