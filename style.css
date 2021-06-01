@@ -8,7 +8,7 @@ button{
     margin-top: 10px;
     text-transform: uppercase;
     padding: 15px 40px;
-    border: none;
+    border: 1px solid #5f9341;
     border-radius: 3px;
     background: #5f9341;
     color: #fff;
@@ -32,4 +32,9 @@ ul li{
 }
 li a{
   color: #5f9341; 
+}
+#delete-btn{
+  color: #5f9341;
+  background: #ffff;
+  
 }
